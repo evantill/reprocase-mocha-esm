@@ -9,7 +9,8 @@
     "test": "TS_NODE_PROJECT='./tsconfig-effective.json' mocha",
     "test-bug": "mocha",
     "showConfig": "tsc --showConfig",
-    "update-effective-config": "tsc --showConfig > ./tsconfig-effective.json"
+    "update-effective-config": "tsc --showConfig > ./tsconfig-effective.json",
+    "app": "node -i dist/index.js"
   },
   "keywords": [],
   "author": "Eric Vantillard",
@@ -18,6 +19,7 @@
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/node-lts": "^18.12.1",
     "@types/chai": "^4.3.4",
+    "@types/figlet": "^1.5.5",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.15.11",
     "chai": "^4.3.7",
