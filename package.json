@@ -1,0 +1,31 @@
+{
+  "name": "reprocase-mocha-esm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "TS_NODE_PROJECT='./tsconfig-effective.json' mocha",
+    "test-bug": "mocha",
+    "showConfig": "tsc --showConfig"
+  },
+  "keywords": [],
+  "author": "Eric Vantillard",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.2",
+    "@tsconfig/node-lts": "^18.12.1",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "true-myth": "^6.2.0"
+  }
+}
