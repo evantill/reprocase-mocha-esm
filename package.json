@@ -8,7 +8,8 @@
     "build": "tsc --build",
     "test": "TS_NODE_PROJECT='./tsconfig-effective.json' mocha",
     "test-bug": "mocha",
-    "showConfig": "tsc --showConfig"
+    "showConfig": "tsc --showConfig",
+		"update-effective-config": "tsc --showConfig > ./tsconfig-effective.json"
   },
   "keywords": [],
   "author": "Eric Vantillard",
