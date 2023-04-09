@@ -10,14 +10,13 @@ new Generator({
 const sharedConfig = {
   entryPoints: ["src/index.ts"],
   bundle: true,
-  minify: true,
-  external: Object.keys(dependencies || {}).concat(Object.keys(peerDependencies || {})),
+  minify: false
 };
 
 build({
   ...sharedConfig,
   platform: 'node', // for CJS
-  outfile: "dist/index.js",
+  outfile: "dist/index.cjs",
 });
 
 build({
@@ -25,4 +24,5 @@ build({
   outfile: "dist/index.esm.js",
   platform: 'neutral', // for ESM
   format: "esm",
+  external: Object.keys(dependencies || {}).concat(Object.keys(peerDependencies || {})),
 });
